@@ -75,31 +75,26 @@ Using tools like Excel, SQL and Power BI, the project involves creating detailed
 
 ### DATA CLEANING AND PREPARATIONS
 In the initial phase of Data Cleaning and preparations, i performed the following actions;
-  -   Data loading and Inspection: Imported the dataset and reviewed the structure, checking for data types and anomalies.
-  -   Handling missing variables: Identified and addressed missing or inconsistent values to ensure data integrity.
-  -   Data Cleaning and formatting: Standardized date formats, corrected inconsistent entries, and ensured numerical columns were properly formatted for analysis.
+  -   **Data loading and Inspection**: Imported the dataset and reviewed the structure, checking for data types and anomalies.
+  -   **Handling missing variables**: Identified and addressed missing or inconsistent values to ensure data integrity.
+  -   **Data Cleaning and formatting**: Standardized date formats, corrected inconsistent entries, and ensured numerical columns were properly formatted for analysis.
 
 ### EXPLORATORY DATA ANALYSIS
 This involved exploring of the Data to answer some questions about the Data such as;
   -   **Top 3 Regions by Subscription Cancellations**: Identified regions with the highest cancellation rates to understand geographic trends.
-  -   Bottom 3 Products by Quantity Sold
-  -   Average Total Sales per product
-  -   Percentage of Total Sales by Product
-  -   Sales by Month, detailed for the years 2023 and 2024
-  -   Calculated metrics such as average sales per product and total revenue by region.
-  -   Total sales by product category
-  -   Regional transaction counts
-  -   Highest-selling products
-  -   Monthly sales trends.
+  -   **Popular Subscription Types**: Analyzed which subscription types had the highest adoption rates.
+  -   **Average Subscription Duration**: Calculated the typical length of subscriptions to gauge customer retention.
+  -   **Revenue Trends by Year**: Examined how revenue evolved over time, particularly focusing on recent years.
+  -   **Customers Who Canceled Within 6 Months**: Determined the proportion of early cancellations.
+  -   **Subscription Counts by Region and Type**: Assessed regional preferences for different subscription types.
+  -   **Total Revenue by Subscription Type**: Evaluated financial contributions from each subscription type.
+  -   **Active vs. Canceled Subscriptions**: Compared the total number of ongoing subscriptions to those that were canceled.
 
-EXPLORATORY DATA ANALYSIS
-This phase involved exploring the data to derive insights and answer key questions, such as:
+### DATA ANALYSIS
+This is where I included some basic lines of code or queries and some of the DAX expressions used during the analysis;
 
-Top 3 Regions by Subscription Cancellations: Identified regions with the highest cancellation rates to understand geographic trends.
-Popular Subscription Types: Analyzed which subscription types had the highest adoption rates.
-Average Subscription Duration: Calculated the typical length of subscriptions to gauge customer retention.
-Revenue Trends by Year: Examined how revenue evolved over time, particularly focusing on recent years.
-Customers Who Canceled Within 6 Months: Determined the proportion of early cancellations.
-Subscription Counts by Region and Type: Assessed regional preferences for different subscription types.
-Total Revenue by Subscription Type: Evaluated financial contributions from each subscription type.
-Active vs. Canceled Subscriptions: Compared the total number of ongoing subscriptions to those that were canceled.
+#### Data Analysis with Excel
+
+
+
+#### Data Analysis with SQL
