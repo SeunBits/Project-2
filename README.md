@@ -73,4 +73,21 @@ Using tools like Excel, SQL and Power BI, the project involves creating detailed
           - Analysis
           - Visualization
 
+### DATA CLEANING AND PREPARATIONS
+In the initial phase of Data Cleaning and preparations, i performed the following actions;
+  -   Data loading and Inspection: Imported the dataset and reviewed the structure, checking for data types and anomalies.
+  -   Handling missing variables: Identified and addressed missing or inconsistent values to ensure data integrity.
+  -   Data Cleaning and formatting: Standardized date formats, corrected inconsistent entries, and ensured numerical columns were properly formatted for analysis.
 
+### EXPLORATORY DATA ANALYSIS
+This involved exploring of the Data to answer some questions about the Data such as;
+  -   Top 3 Regions by Sales
+  -   Bottom 3 Products by Quantity Sold
+  -   Average Total Sales per product
+  -   Percentage of Total Sales by Product
+  -   Sales by Month, detailed for the years 2023 and 2024
+  -   Calculated metrics such as average sales per product and total revenue by region.
+  -   Total sales by product category
+  -   Regional transaction counts
+  -   Highest-selling products
+  -   Monthly sales trends.
