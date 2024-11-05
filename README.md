@@ -81,7 +81,7 @@ In the initial phase of Data Cleaning and preparations, i performed the followin
 
 ### EXPLORATORY DATA ANALYSIS
 This involved exploring of the Data to answer some questions about the Data such as;
-  -   Top 3 Regions by Sales
+  -   **Top 3 Regions by Subscription Cancellations**: Identified regions with the highest cancellation rates to understand geographic trends.
   -   Bottom 3 Products by Quantity Sold
   -   Average Total Sales per product
   -   Percentage of Total Sales by Product
@@ -91,3 +91,15 @@ This involved exploring of the Data to answer some questions about the Data such
   -   Regional transaction counts
   -   Highest-selling products
   -   Monthly sales trends.
+
+EXPLORATORY DATA ANALYSIS
+This phase involved exploring the data to derive insights and answer key questions, such as:
+
+Top 3 Regions by Subscription Cancellations: Identified regions with the highest cancellation rates to understand geographic trends.
+Popular Subscription Types: Analyzed which subscription types had the highest adoption rates.
+Average Subscription Duration: Calculated the typical length of subscriptions to gauge customer retention.
+Revenue Trends by Year: Examined how revenue evolved over time, particularly focusing on recent years.
+Customers Who Canceled Within 6 Months: Determined the proportion of early cancellations.
+Subscription Counts by Region and Type: Assessed regional preferences for different subscription types.
+Total Revenue by Subscription Type: Evaluated financial contributions from each subscription type.
+Active vs. Canceled Subscriptions: Compared the total number of ongoing subscriptions to those that were canceled.
