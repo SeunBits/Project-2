@@ -98,3 +98,38 @@ This is where I included some basic lines of code or queries and some of the DAX
 
 
 #### Data Analysis with SQL
+---
+1.  **Total number of customers from each region**:
+   ```
+SELECT Region, COUNT(CustomerID) AS TotalCustomers
+FROM CustomerData
+GROUP BY Region;
+```
+![Screenshot 2024-11-04 235734](https://github.com/user-attachments/assets/bf27f038-6f79-4be5-b7bf-577a3892a5fc)
+
+2.  **Most popular subscription type by the number of customers**:
+```
+SELECT TOP 1 SubscriptionType, COUNT(CustomerID) AS CustomerCount
+FROM CustomerData
+GROUP BY SubscriptionType
+ORDER BY CustomerCount DESC;
+```
+![Screenshot 2024-11-05 000140](https://github.com/user-attachments/assets/57e1b626-41fb-4b64-ae2c-27219af3db7c)
+
+3.  **Customers who canceled their subscription within 6 months**.
+```
+SELECT CustomerID, CustomerName, SubscriptionType, SubscriptionStart, SubscriptionEnd
+FROM CustomerData
+WHERE Canceled = 0
+  AND MONTH (SubscriptionStart) <= 6;
+```
+o
+calculate the average subscription duration for all customers.
+o
+find customers with subscriptions longer than 12 months.
+o
+calculate total revenue by subscription type.
+o
+find the top 3 regions by subscription cancellations.
+o
+find the total number of active and canceled subscriptions.
