@@ -123,13 +123,44 @@ FROM CustomerData
 WHERE Canceled = 0
   AND MONTH (SubscriptionStart) <= 6;
 ```
-o
-calculate the average subscription duration for all customers.
-o
-find customers with subscriptions longer than 12 months.
-o
-calculate total revenue by subscription type.
-o
-find the top 3 regions by subscription cancellations.
-o
-find the total number of active and canceled subscriptions.
+
+4.  **Average subscription duration for all customers**.
+```
+SELECT AVG([Subscription_Duration]) AS AverageDuration
+FROM CustomerData;
+```
+![image](https://github.com/user-attachments/assets/9f7f5dfb-3419-4142-bd3d-8e6475ef0409)
+
+5.  **Customers with subscriptions longer than 12 months**.
+```
+SELECT CustomerID, CustomerName, SubscriptionType, SubscriptionStart, SubscriptionEnd
+FROM CustomerData
+WHERE [Subscription_Duration] > 365;
+```
+
+6.  **Total revenue by subscription type**.
+```
+SELECT SubscriptionType, SUM(Revenue) AS TotalRevenue
+FROM CustomerData
+GROUP BY SubscriptionType;
+```
+![image](https://github.com/user-attachments/assets/65eda97c-8168-46f4-aecd-9c7d3da15d03)
+
+7.  **Top 3 regions by subscription cancellations**.
+```
+SELECT TOP 3 Region, COUNT(CustomerID) AS Cancellations
+FROM CustomerData
+WHERE Canceled = 1
+GROUP BY Region
+ORDER BY Cancellations DESC;
+```
+![image](https://github.com/user-attachments/assets/7a9a4c3c-585e-4013-9c79-f7f317e17ed7)
+
+8.  **Total number of active and canceled subscriptions**.
+```
+SELECT 
+    SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+    SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM CustomerData;
+```
+![image](https://github.com/user-attachments/assets/a3309d0a-0769-4557-82ee-0e37c477d54d)
