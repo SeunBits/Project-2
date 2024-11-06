@@ -95,6 +95,37 @@ This is where I included some basic lines of code or queries and some of the DAX
 
 #### Data Analysis with Excel
 
+1.  AVERAGE  subscription duration  BY subscription TYPE
+
+   BASIC    =AVERAGEIF(D2:D33788,D2,I2:I33788)
+   
+   PREMIUM  =AVERAGEIF(D2:D33788,D33773,I2:I33788)
+   
+   STANDARD =AVERAGEIF(D2:D33788,D5,I2:I33788)
+
+   ![image](https://github.com/user-attachments/assets/3445a5e0-05ac-466e-a687-7fab783ee042)
+
+2.   SUM OF  subscription REVENUE  BY subscription TYPE
+
+     BASIC    =SUMIF(D2:D33788,D2,H2:H33788)
+     
+     PREMIUM  =SUMIF(D2:D33788,D3,H2:H33788)
+     
+     STANDARD =SUMIF(D2:D33788,D5,H2:H33788)
+
+![image](https://github.com/user-attachments/assets/ea1c4af6-aac2-4f01-9d54-152687c452a5)
+
+3. SUMMARIES AS FOLLOWS
+   
+       Sum of Revenue by Region (A)
+       Sum of Revenue by Subscription Type (B)
+       Average of Revenue by Subscription Type (C)
+       Count of Subscription Type per Region/Subscription Type (D)
+       Count of Cancelled per SubscriptionType (E)
+   
+![image](https://github.com/user-attachments/assets/b0fe251c-2bf5-4273-a2d6-0b8748ada70f)
+
+
 
 
 #### Data Analysis with SQL
@@ -164,3 +195,16 @@ SELECT
 FROM CustomerData;
 ```
 ![image](https://github.com/user-attachments/assets/a3309d0a-0769-4557-82ee-0e37c477d54d)
+
+
+### DATA VISUALIZATION
+
+#### From Excel
+
+![image](https://github.com/user-attachments/assets/ac7714c4-f298-4397-8844-73af368bde70)
+
+![image](https://github.com/user-attachments/assets/83c82676-e115-41ee-9586-ae7bf44d56db)
+
+![image](https://github.com/user-attachments/assets/2e3fff47-129e-4a14-b68f-e2d913566efd)
+
+
